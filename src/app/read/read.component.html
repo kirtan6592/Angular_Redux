@@ -1,0 +1,11 @@
+<p>
+  read works!
+</p>
+
+<h3>Data</h3>
+
+<ul>
+  <li *ngFor="let i of data | async; let j=index">
+    <a [href]="i.url" target="_blank">{{i.name}} </a> <button type="button" (click)="onDelete(j)">Remove</button>
+  </li>
+</ul>

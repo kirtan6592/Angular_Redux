@@ -48,11 +48,13 @@
     [columnsresize]="true" [sortable]="true">
 </jqxGrid>
 
-<router-outlet></router-outlet>
+
 
 <!-- <ul *ngIf="(temData$ | async).length">
   <li *ngFor="let todo of temData$ | async">{{todo.name}}</li>
 </ul>  -->
   <app-test #name><p *ngFor="let i of [0,1]">yes content projected {{i}}</p></app-test>
 
-  <a [routerLink]="[ '/redux' ]">Redux</a>
+  <router-outlet></router-outlet>
+
+  
